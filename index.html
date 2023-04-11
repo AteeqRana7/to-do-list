@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do Application</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__heading">Today</h1>
+        <div class="header__body">
+          <input
+            type="text"
+            name="task"
+            id="add-task"
+            placeholder="e.g. Buy groceries"
+            class="header__body-input"
+          />
+          <button class="header__body-btn" id="add-task-btn">Add Task</button>
+        </div>
+      </header>
+      <section class="body">
+        <div class="tasks-summary-container">
+          <div class="tasks-summary-element">
+            <div class="tasks-summary-element-text">Remaining</div>
+            <div class="tasks-summary-element-digit" id="tasks-remaining">
+              0
+            </div>
+          </div>
+          <div class="tasks-summary-element">
+            <div class="tasks-summary-element-text">Completed</div>
+            <div class="tasks-summary-element-digit" id="tasks-completed">
+              0
+            </div>
+          </div>
+          <div class="tasks-summary-element">
+            <div class="tasks-summary-element-text">Total</div>
+            <div class="tasks-summary-element-digit" id="tasks-total">0</div>
+          </div>
+        </div>
+        <div class="tasks-container"></div>
+      </section>
+      <!-- <div class="copyright-container">
+        By
+        <a href="https://github.com/AteeqRana7" target="_blank">Ateeq Rana</a>
+      </div> -->
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
